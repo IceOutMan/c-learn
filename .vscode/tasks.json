@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "clear",
+        "type": "shell",
+        "command": "rm main",
+        "args": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "compile",
+        "type": "shell",
+        "command": "gcc",
+        "args": ["-g", "main.c", "-o", "main"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  
